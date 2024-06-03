@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_30fcce913a1799b31c6b8da24a0a6569 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_30fcce913a1799b31c6b8da24a0a6569" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_30fcce913a1799b31c6b8da24a0a6569 = L.map(
+                "map_30fcce913a1799b31c6b8da24a0a6569",
+                {
+                    center: [52.5107745, 13.3896707],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f7d59afca45b43c1090267c3866bfb4c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f7d59afca45b43c1090267c3866bfb4c.addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            var marker_576ecc07123ed1b697af83a34de4ac08 = L.marker(
+                [52.5107745, 13.3896707],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_576ecc07123ed1b697af83a34de4ac08.bindTooltip(
+                `<div>
+                     Place: Centre Marc Bloch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6ec84e3803d4a2968fa9bcd183ae73e = L.marker(
+                [52.5025988, 13.4199707],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_c6ec84e3803d4a2968fa9bcd183ae73e.bindTooltip(
+                `<div>
+                     Place: Chez Michel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62e2a037685c04dbbed75f5b78a4a092 = L.marker(
+                [52.4916585, 13.3660462],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_62e2a037685c04dbbed75f5b78a4a092.bindTooltip(
+                `<div>
+                     Place: Yorkstrasse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e93f80e92f31255a4d1288b6f3fa7d2 = L.marker(
+                [52.4919769, 13.3646303],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_7e93f80e92f31255a4d1288b6f3fa7d2.bindTooltip(
+                `<div>
+                     Place: Les Migras
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8d1bef31b3b59238ffba055d39d2b62 = L.marker(
+                [52.4919769, 13.3646303],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_e8d1bef31b3b59238ffba055d39d2b62.bindTooltip(
+                `<div>
+                     Place: Lesbenberatung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4482f28dd8737b4bff51d931911759bc = L.marker(
+                [52.4919769, 13.3646303],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_4482f28dd8737b4bff51d931911759bc.bindTooltip(
+                `<div>
+                     Place: Siegesaüle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac9d9f85cf060615702d35bfd9fd14d2 = L.marker(
+                [52.4967592, 13.3618488],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_ac9d9f85cf060615702d35bfd9fd14d2.bindTooltip(
+                `<div>
+                     Place: Begine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e26fab6548144f301bc5617b765da081 = L.marker(
+                [52.4932746887207, 13.36770248413086],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_e26fab6548144f301bc5617b765da081.bindTooltip(
+                `<div>
+                     Place: Blocksberg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1172b038171eec22503964df3f3ac4d4 = L.marker(
+                [52.4965733, 13.3653082],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_1172b038171eec22503964df3f3ac4d4.bindTooltip(
+                `<div>
+                     Place: Kaiserhof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff6c4835a0ebb08682ee2c15babb9e50 = L.marker(
+                [52.4977986, 13.3513834],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_ff6c4835a0ebb08682ee2c15babb9e50.bindTooltip(
+                `<div>
+                     Place: Isherwood
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d4689435a856d36d08d275707384b28 = L.marker(
+                [52.4980181, 13.3483763],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_4d4689435a856d36d08d275707384b28.bindTooltip(
+                `<div>
+                     Place: Eldorado
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e8bf38547b23c2a6b24a0ca3e09b53a = L.marker(
+                [52.5042512, 13.3582193],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_6e8bf38547b23c2a6b24a0ca3e09b53a.bindTooltip(
+                `<div>
+                     Place: Schwules Museum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8275f0bfa512bb2a83df09ad34ba6c5d = L.marker(
+                [52.5021173, 13.3528839],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_8275f0bfa512bb2a83df09ad34ba6c5d.bindTooltip(
+                `<div>
+                     Place: Berliner Aids-Hilfe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_648a73622d049cd56f1265be9ed0bf78 = L.marker(
+                [52.49085998535156, 13.369101524353027],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_648a73622d049cd56f1265be9ed0bf78.bindTooltip(
+                `<div>
+                     Place: Sankt-Matheus Friedhof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_547aaa3559b408a9722e29e5de123599 = L.marker(
+                [52.5104137, 13.376765],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_547aaa3559b408a9722e29e5de123599.bindTooltip(
+                `<div>
+                     Place: Mémorial queer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3efd2fa6766333e0e7e31e1bc2489dbe = L.marker(
+                [52.5138731, 13.3787346],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_3efd2fa6766333e0e7e31e1bc2489dbe.bindTooltip(
+                `<div>
+                     Place: Mémorial Shoah
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc81cbd67e5d87c2573ff8f4e6f715d9 = L.marker(
+                [52.5271586, 13.4321467],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_fc81cbd67e5d87c2573ff8f4e6f715d9.bindTooltip(
+                `<div>
+                     Place: Volkspark Friedrichshain
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e4ff58211fa47eefa30d0bb076d9e5b = L.marker(
+                [52.5429726, 13.4264227],
+                {}
+            ).addTo(map_30fcce913a1799b31c6b8da24a0a6569);
+        
+    
+            marker_6e4ff58211fa47eefa30d0bb076d9e5b.bindTooltip(
+                `<div>
+                     Place: Courage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
